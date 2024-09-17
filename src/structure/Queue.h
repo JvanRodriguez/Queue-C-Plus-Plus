@@ -1,6 +1,8 @@
+#ifndef QUEUE_H
+#define QUEUE_H
 
+#include "Node.h"
 template <typename T>
-#include "Node.cpp"
 
 class Queue
 {
@@ -21,8 +23,8 @@ public:
         }
         else
         {
-            last.setNext(newNode);
-            newNode.setPrevious(last);
+            last->setNext(newNode);
+            newNode->setPrevious(last);
             last = newNode;
         }
     }
@@ -32,12 +34,12 @@ public:
     }
     T poll()
     {
-        T data = null;
+        T data = nullptr;
         if (!isEmpty())
         {
-            data = head.getData();
+            data = head->getData();
             Node<T> *tempPointer = head;
-            head = head.getNext();
+            head = head->getNext();
             delete tempPointer;
         }
 
@@ -45,9 +47,10 @@ public:
     }
     T peek()
     {
-        T data = null;
+        T data = nullptr;
         if (!isEmpty())
-            data = head.getData();
+            data = head->getData();
         return data;
     }
 };
+#endif

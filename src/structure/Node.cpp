@@ -34,4 +34,4 @@ class Node{
         void setData(T data) {
             this->data = data;
         }
-}
+};

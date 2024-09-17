@@ -44,3 +44,11 @@ número enteros, para despues comprobar los metodos implementados
 e imprimir los resultados.
 
 Al ser una estructura de datos genérica puede tomar cualquier tipo de datos.
+
+Para compilar por comandos:
+```bash
+   g++ main.cpp -o app
+   ```   
+```bash
+   ./app.exe
+   ```   

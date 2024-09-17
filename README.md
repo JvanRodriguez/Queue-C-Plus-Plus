@@ -25,6 +25,7 @@ variables del entorno del sistema, por lo que el `path` deberia verse:
    C:\MinGW\bin\
    ```
 
+
 En el proyecto hay una carpeta llamada `.vscode` la cual tiene un archivo
 `c_cpp_properties.json`, este contiene configuraciónes específicas del proyecto, para
 una correcta compilación, la ruta debe verse:
@@ -32,6 +33,7 @@ una correcta compilación, la ruta debe verse:
 ```bash
    "compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
    ```
+
 
 Si se está usando el editor de codigo `Visual Studio Code` debe tener en cuenta que
 debe tener instalada la extensión `C/C++` y `C/C++ Compile Run`.

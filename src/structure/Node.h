@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef NODE_H
+#define NODE_H
 
 template <typename T>
 
@@ -42,3 +43,4 @@ public:
         this->data = data;
     }
 };
+#endif

@@ -34,7 +34,7 @@ public:
     }
     T poll()
     {
-        T data = nullptr;
+        T data;
         if (!isEmpty())
         {
             data = head->getData();
@@ -47,7 +47,7 @@ public:
     }
     T peek()
     {
-        T data = nullptr;
+        T data;
         if (!isEmpty())
             data = head->getData();
         return data;
